@@ -1,23 +1,26 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "rgukt123",
+    "username": "databaseadmin@postgresqlserver-employee",
+    "password": "Database@123",
     "database": "project",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "host": "postgresqlserver-employee.postgres.database.azure.com",
+    "dialect": "postgres",
+    "port":5432
   },
   "test": {
-    "username": "postgres",
-    "password": "rgukt123",
+    "username": "databaseadmin@postgresqlserver-employee",
+    "password": "Database@123",
     "database": "project",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "host": "postgresqlserver-employee.postgres.database.azure.com",
+    "dialect": "postgres",
+    "port":5432
   },
   "production": {
-    "username": "postgres",
-    "password": "rgukt123",
+    "username": "databaseadmin@postgresqlserver-employee",
+    "password": "Database@123",
     "database": "project",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "host": "postgresqlserver-employee.postgres.database.azure.com",
+    "dialect": "postgres",
+    "port":5432
   }
 }

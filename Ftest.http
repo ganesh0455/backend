@@ -95,3 +95,9 @@ GET http://localhost:8001/projectsUnderGdo?gdoId=1
 //Employees under particular project 
 
 GET http://localhost:8001/empsUnderProject?projId=1
+
+###
+
+//Manager name of particular Employee
+
+GET http://localhost:8001/managerOfemp?gdoId=7

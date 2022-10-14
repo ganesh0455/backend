@@ -16,6 +16,7 @@ const AllManagers=require('./task/AllManagers');
 const managerPendingTasksAtAdmin=require('./task/managerPendingTasksAtAdmin');
 const projectsUnderGdo=require('./task/projectsUnderGdo');
 const EmpsUnderProject=require('./task/EmpUnderProject');
+const ManagerOfEmps=require('./task/managerOfEmp');
 // const viewEmpTasks=require("./manager/viewEmptasks")
 // const alltables=require("./tasks/alltables")
 // const joinroleempproj=require("./tasks/EmpUnderProjUnderGdo")
@@ -40,6 +41,7 @@ app.use('/allManagers',AllManagers);
 app.use('/managerPendingTasksAtAdmin',managerPendingTasksAtAdmin);
 app.use('/projectsUnderGdo',projectsUnderGdo);
 app.use('/empsUnderProject',EmpsUnderProject);
+app.use('/managerOfemp',ManagerOfEmps);
 //app.use('/reject',rejectedTasks);
 //app.use('/projectsUnderGdo',viewEmpTasks);
 // app.use('/joinall',alltables);
