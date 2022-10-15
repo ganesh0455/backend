@@ -8,11 +8,6 @@ app.use(express.json());
 const sequelize=require('sequelize');
 
 project.belongsTo(gdo,{foreignKey:'gdoId',targetKey:'id'});
-//employee.belongsTo(gdo, { foreignKey: 'gdoId', targetKey: 'id' });
-//employee.belongsTo(project, { foreignKey: 'projId', targetKey: 'id' });
-//task.belongsTo(employee,{foreignKey:"eId",targetKey:"id"});
-
-//gdo.hasMany(project,{foreignKey:'gdoId',targetId:'id'});
 
 router.get('/', async (request, response) => {
     const { gdoId } = request.query;

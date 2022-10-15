@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "databaseadmin@postgresqlserver-employee",
-    "password": "Database@123",
+    "username": "postgres",
+    "password": "rgukt123",
     "database": "project",
     "host": "postgresqlserver-employee.postgres.database.azure.com",
     "dialect": "postgres",

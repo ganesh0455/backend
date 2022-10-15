@@ -28,9 +28,7 @@ router.get('/',async (request,response)=>{
         },
         attributes:['id','tasks','date','Astatus']
     })
-    console.log("Approved[0]",ApprovedTasks[0]);
     const value=`${ApprovedTasks}`;
-    console.log("value",value);
     if(!value){
         response.status(400).json({
             success:false,

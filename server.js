@@ -17,15 +17,12 @@ const managerPendingTasksAtAdmin=require('./task/managerPendingTasksAtAdmin');
 const projectsUnderGdo=require('./task/projectsUnderGdo');
 const EmpsUnderProject=require('./task/EmpUnderProject');
 const ManagerOfEmps=require('./task/managerOfEmp');
-// const viewEmpTasks=require("./manager/viewEmptasks")
-// const alltables=require("./tasks/alltables")
-// const joinroleempproj=require("./tasks/EmpUnderProjUnderGdo")
-// const joinTaskEmpRoleProjGdo=require("./tasks/tasksOfEmpUnderProjUnderGdo")
-// const ApprovedEmpTasks=require("./tasks/ApproveEmpTasks");
-// const ApprovedManagerTasks=require("./tasks/approvedManagerTasks");
 app.use(express.json());
 app.use(cors());
 
+app.get('/', ()=> {
+    console.log("Hiii")
+} )
 app.use('/signup',signup);
 app.use('/login',login);
 app.use('/addtask',addTask);
@@ -42,14 +39,6 @@ app.use('/managerPendingTasksAtAdmin',managerPendingTasksAtAdmin);
 app.use('/projectsUnderGdo',projectsUnderGdo);
 app.use('/empsUnderProject',EmpsUnderProject);
 app.use('/managerOfemp',ManagerOfEmps);
-//app.use('/reject',rejectedTasks);
-//app.use('/projectsUnderGdo',viewEmpTasks);
-// app.use('/joinall',alltables);
-// app.use('/joinroleempproj',joinroleempproj);
-// app.use("/tasksOfEmpUnderProjUnderGdo",joinTaskEmpRoleProjGdo);
-//app.use("/approve",ApproveReject);
-//app.use('/approvedEmpTasks',ApprovedEmpTasks);
-// app.use('/approvedManagerTasks',ApprovedManagerTasks);
 
 app.listen(8001,()=>{
     console.log("Server started at http://localhost:8001/");

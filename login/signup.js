@@ -16,7 +16,7 @@ router.post('/',async (request,response)=>{
     if(signUpUser){
         response.status(400).json({
             success:false,
-            message:"This email already exist , change other one"
+            message:"This email already exist"
         })
     }
     else{

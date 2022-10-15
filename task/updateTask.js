@@ -8,15 +8,12 @@ app.use(express.json());
 router.put('/',async (request,response)=>{
     const {taskId}=request.query;
     const {tasks}=request.body;
-    console.log("tasks",tasks);
-    //console.log("&&&&&",taskId)
     const updateTask=await task.update({tasks:tasks,Mstatus:'Pending',Astatus:'Pending'},{
         where:{
             id:taskId
         },
         attributes:['tasks']
     })
-    console.log("updateTask",updateTask);
     if(updateTask[0]===1){
         response.status(200).json({
             success:true,

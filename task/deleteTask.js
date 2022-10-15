@@ -12,8 +12,6 @@ router.delete('/',async (request,response)=>{
             id:taskId
         }
     })
-    // console.log("deleted =",deletedTask);
-    // console.log("ganesh")
     if(deletedTask!=0){
         response.status(200).json({
             success:true,

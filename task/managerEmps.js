@@ -27,7 +27,6 @@ router.get('/',async (request,response)=>{
         },
         attributes:['id','name']
     })
-    //response.send(selfJoinEmp);
     if(`${selfJoinEmp}`){
         response.status(200).json({
             success:true,

@@ -15,7 +15,6 @@ router.get('/',async (request,response)=>{
         order:[['id','asc']],
         attributes:['id','tasks','date','Astatus']
     })
-    //response.send(listOfTasks);
     if(listOfTasks){
         response.status(200).json({
             success:true,

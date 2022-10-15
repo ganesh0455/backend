@@ -5,7 +5,6 @@ const db=require('../models/index');
 const {employee,role,project,gdo}=db;
 app.use(express.json());
 
-//role.belongsTo(employee,{foriegnKey:'roleId',targetKey:'id'});
 employee.belongsTo(role,{foriegnKey:'roleId',targetKey:'id'})
 
 router.get('/',async (request,response)=>{
@@ -32,7 +31,6 @@ router.get('/',async (request,response)=>{
         },
         attributes:['id','name']
     })
-    //response.send(allManagers)
     if(allManagers){
         response.status(200).json({
             success:true,

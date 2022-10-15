@@ -30,7 +30,6 @@ router.get('/',async (request,response)=>{
         },
         attributes:['name']
     })
-    //response.send(EmpsUnderProj);
     if(EmpsUnderProj){
         response.status(200).json({
             success:true,
